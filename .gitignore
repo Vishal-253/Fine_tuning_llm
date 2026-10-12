@@ -1,0 +1,48 @@
+# Assignment source requested to remain local
+GenAI.pdf
+
+# Python environments and secrets
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dataset and model caches
+.cache/
+.cache-dir/
+huggingface_cache/
+HF_HOME/
+transformers_cache/
+keras_cache/
+keras_hub_cache/
+~/.cache/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.h5
+
+# Experiment outputs
+artifacts/
+checkpoints/
+adapters/
+runs/
+logs/
+tensorboard/
+*.log
+*.csv
+*.jsonl
+*.png
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
