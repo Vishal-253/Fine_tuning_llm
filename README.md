@@ -1,6 +1,6 @@
 # Gemma LoRA and QLoRA Fine-tuning
 
-This project implements the CS13104 lab exercise: fine-tuning a Gemma model on IMDB Reviews with LoRA and QLoRA, then comparing trainable parameters, memory use, training time, validation metrics, and generated outputs.
+This project implements lab exercise: fine-tuning a Gemma model on IMDB Reviews with LoRA and QLoRA, then comparing trainable parameters, memory use, training time, validation metrics, and generated outputs.
 
 ## Important limitation
 
@@ -12,7 +12,7 @@ Run the full experiment on a Linux CUDA machine with a compatible NVIDIA GPU, or
 
 - `fine_tuning_llm.ipynb`: implementation of the assignment.
 - `requirements.txt`: focused notebook and fine-tuning dependencies.
-- `.gitignore`: excludes the assignment PDF, caches, datasets, checkpoints, adapters, and generated results.
+- `.gitignore`:  caches, datasets, checkpoints, adapters, and generated results.
 
 ## Recommended environment
 
@@ -53,7 +53,3 @@ The notebook defaults to small deterministic samples. Set `USE_SAMPLE_DATA = Fal
 The notebook covers model and tokenizer setup, IMDB preparation, dynamic padding, Keras LoRA configuration, frozen base weights, optimizer and checkpoint configuration, validation metrics, adapter save/reload, PEFT QLoRA with NF4 and double quantization, memory/time measurement, LoRA rank values 2/4/8, comparison plotting, and qualitative generation.
 
 The Keras and Hugging Face APIs can change between releases. If a model preset or adapter method has moved, the notebook raises an explicit error and the installed library documentation should be consulted rather than silently reporting a result.
-
-## Submission note
-
-`GenAI.pdf` is intentionally ignored as requested. Do not commit model weights, downloaded datasets, access tokens, checkpoints, or fabricated metrics.
