@@ -54,6 +54,4 @@ The notebook covers model and tokenizer setup, IMDB preparation, dynamic padding
 
 The Keras and Hugging Face APIs can change between releases. If a model preset or adapter method has moved, the notebook raises an explicit error and the installed library documentation should be consulted rather than silently reporting a result. The KerasHub path expects its supported causal-language-model string dataset interface; the PEFT path uses an explicit dynamic-padding collator with masked labels.
 
-## Submission note
 
-`GenAI.pdf` is intentionally ignored as requested. Do not commit model weights, downloaded datasets, access tokens, checkpoints, or fabricated metrics.
